@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
         width: 60,
         height: 60,
         top: 70,
-        left: 70,
+        left: 20,
     },
 
     greeting: {
         fontSize: 16,
         width: 200,
         height: 30,
-        left: 80,
+        left: 30,
         top: 75,
         color: "#929292",
         fontWeight: '400',
@@ -43,10 +43,9 @@ const styles = StyleSheet.create({
     username: {
         fontSize: 24,
         fontWeight: '600',
-        right: 160,
         top: 97,
         color: '#0D0D26',
-        right: 120,
+        right: 170,
     },
 
     circle: {
@@ -54,7 +53,7 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 30,
         backgroundColor: "#FAFAFD",
-        right: 70,
+        right: 120,
         top: 80,
     },
 
