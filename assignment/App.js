@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import HomePage from './HomePage/HomePage';
+import Settings from './Settings/Settings';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomePage/>
+      <Settings/>
     </View>
   );
 }
