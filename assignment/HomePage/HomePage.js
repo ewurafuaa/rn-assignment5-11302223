@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet, View} from 'react-native';
+import { ScrollView,StyleSheet, View} from 'react-native';
 import Header from './Header';
 import Card from './Card';
 import Options from './Options';

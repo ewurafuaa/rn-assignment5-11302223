@@ -1,6 +1,8 @@
 import { StyleSheet, View, Image, Text, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Footer(){
+    const navigation = useNavigation();
     return(
         <View style={styles.footer}>
             <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('Home')}>
@@ -61,3 +63,4 @@ const styles = StyleSheet.create({
         color: '#929292',
     },
 })
+
