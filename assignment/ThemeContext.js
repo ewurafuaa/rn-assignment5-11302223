@@ -3,7 +3,7 @@ import { useColorScheme } from 'react-native';
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProvider = ({children}) => {
   const systemTheme = useColorScheme();
   const [theme, setTheme] = useState(systemTheme);
 
@@ -12,7 +12,7 @@ export const ThemeProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
       {children}
     </ThemeContext.Provider>
   );

@@ -7,35 +7,35 @@ import Footer from '../HomePage/Footer';
 
 const Settings = () => {
     const navigation = useNavigation();
-    const { theme, toggleTheme } = useTheme();
+    const {theme, toggleTheme} = useTheme();
     const currentTheme = theme === 'light' ? lightTheme : darkTheme;
 
-    return (
+    return(
         <>
-            <View style={[styles.container, { backgroundColor: currentTheme.background }]}>
-                <Text style={[styles.heading, { color: currentTheme.text }]}>Settings</Text>
-                <View style={[styles.options, { backgroundColor: currentTheme.background }]}>
-                    <Text style={[styles.text, { color: currentTheme.text }]}>Language</Text>
+            <View style={[styles.container, {backgroundColor: currentTheme.background}]}>
+                <Text style={[styles.heading, {color: currentTheme.text}]}>Settings</Text>
+                <View style={[styles.options, {backgroundColor: currentTheme.background}]}>
+                    <Text style={[styles.text, {color: currentTheme.text}]}>Language</Text>
                     <Image style={styles.arrowIcon} source={require('../assets/arrow.png')} />
                 </View>
-                <View style={[styles.options, { backgroundColor: currentTheme.background }]}>
-                    <Text style={[styles.text, { color: currentTheme.text }]}>My Profile</Text>
+                <View style={[styles.options, {backgroundColor: currentTheme.background}]}>
+                    <Text style={[styles.text, {color: currentTheme.text}]}>My Profile</Text>
                     <Image style={styles.arrowIcon} source={require("../assets/arrow.png")} />
                 </View>
-                <View style={[styles.options, { backgroundColor: currentTheme.background }]}>
-                    <Text style={[styles.text, { color: currentTheme.text }]}>Contact Us</Text>
+                <View style={[styles.options, {backgroundColor: currentTheme.background}]}>
+                    <Text style={[styles.text, {color: currentTheme.text}]}>Contact Us</Text>
                     <Image style={styles.arrowIcon} source={require("../assets/arrow.png")} />
                 </View>
-                <View style={[styles.options, { backgroundColor: currentTheme.background }]}>
-                    <Text style={[styles.text, { color: currentTheme.text }]}>Change Password</Text>
+                <View style={[styles.options, {backgroundColor: currentTheme.background}]}>
+                    <Text style={[styles.text, {color: currentTheme.text}]}>Change Password</Text>
                     <Image style={styles.arrowIcon} source={require("../assets/arrow.png")} />
                 </View>
-                <View style={[styles.options, { backgroundColor: currentTheme.background }]}>
-                    <Text style={[styles.text, { color: currentTheme.text }]}>Privacy Policy</Text>
+                <View style={[styles.options, {backgroundColor: currentTheme.background}]}>
+                    <Text style={[styles.text, {color: currentTheme.text}]}>Privacy Policy</Text>
                     <Image style={styles.arrowIcon} source={require("../assets/arrow.png")} />
                 </View>
-                <View style={[styles.themeCard, { backgroundColor: currentTheme.background }]}>
-                    <Text style={[styles.theme, { color: currentTheme.text }]}>Theme</Text>
+                <View style={[styles.themeCard, {backgroundColor: currentTheme.background}]}>
+                    <Text style={[styles.theme, {color: currentTheme.text}]}>Theme</Text>
                     <Switch value={theme === 'dark'} onValueChange={toggleTheme} />
                 </View>
             </View>

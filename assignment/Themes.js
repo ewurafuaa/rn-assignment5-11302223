@@ -11,13 +11,13 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  background: '#000000',
+  background: '#0D0D17',
   text: '#FFFFFF',
   greeting: '#929292',
-  cardBackground: '#1E1E1E',
-  footerBackground: '#1E1E1E',
+  cardBackground: '#272540',
+  footerBackground: '#272540',
   footerText: '#FAFAFD',
-  circleBackground: '#1E1E1E',
+  circleBackground: '#272540',
   iconColor: '#FFFFFF',
   sellAll: '#0552FF',
   

@@ -12,9 +12,9 @@ import { lightTheme, darkTheme } from '../Themes';
 export default function HomePage() {
     const {theme} = useTheme();
     const currentTheme = theme === 'light' ? lightTheme:darkTheme;
-    return (
-        <View style={[styles.container, { backgroundColor: currentTheme.background }]}>
-            <ScrollView contentContainerStyle={[styles.scrollView, { backgroundColor: currentTheme.background }]}>
+    return(
+        <View style={[styles.container, {backgroundColor: currentTheme.background}]}>
+            <ScrollView contentContainerStyle={[styles.scrollView, {backgroundColor: currentTheme.background}]}>
                 <Header />
                 <Card />
                 <Options />

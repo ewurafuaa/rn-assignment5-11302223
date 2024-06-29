@@ -11,23 +11,23 @@ export default function Footer() {
     const currentTheme = theme === 'light' ? lightStyles : darkStyles;
 
     const activeRoute = route.name;
-    return (
+    return(
         <View style={[styles.footer, currentTheme.footer]}>
-            <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('Home')}>
-                <Image style={styles.footerIcon} source={require('../assets/home.png')} />
-                <Text style={[styles.footerText, currentTheme.text, activeRoute === 'Home' && styles.activeText]}>Home</Text>
+            <TouchableOpacity style={styles.navigation} onPress={() => navigation.navigate('Home')}>
+                <Image style={styles.icon} source={require('../assets/home.png')} />
+                <Text style={[styles.title, currentTheme.text, activeRoute === 'Home' && styles.activePage]}>Home</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.footerItem}>
-                <Image style={styles.footerIcon} source={require('../assets/myCards.png')} />
-                <Text style={[styles.footerText, currentTheme.text]}>My Cards</Text>
+            <TouchableOpacity style={styles.navigation}>
+                <Image style={styles.icon} source={require('../assets/myCards.png')} />
+                <Text style={[styles.title, currentTheme.text]}>My Cards</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.footerItem}>
-                <Image style={styles.footerIcon} source={require('../assets/statictics.png')} />
-                <Text style={[styles.footerText, currentTheme.text]}>Statistics</Text>
+            <TouchableOpacity style={styles.navigation}>
+                <Image style={styles.icon} source={require('../assets/statictics.png')} />
+                <Text style={[styles.title, currentTheme.text]}>Statistics</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('Settings')}>
-                <Image style={styles.footerIcon} source={require('../assets/settings.png')} />
-                <Text style={[styles.footerText, currentTheme.text, activeRoute === 'Settings' && styles.activeText]}>Settings</Text>
+            <TouchableOpacity style={styles.navigation} onPress={() => navigation.navigate('Settings')}>
+                <Image style={styles.icon} source={require('../assets/settings.png')} />
+                <Text style={[styles.title, currentTheme.text, activeRoute === 'Settings' && styles.activePage]}>Settings</Text>
             </TouchableOpacity>
         </View>
     )
@@ -40,19 +40,22 @@ const styles = StyleSheet.create({
         paddingVertical: 15,
         borderColor: '#E7E7E7',
     },
-    footerItem: {
+
+    navigation: {
         alignItems: 'center',
     },
-    footerIcon: {
+
+    icon: {
         width: 24,
         height: 24,
         marginBottom: 5,
     },
-    footerText: {
+
+    title: {
         fontSize: 14,
     },
 
-    activeText:{
+    activePage:{
         color: '#0552FF'
     }
 });

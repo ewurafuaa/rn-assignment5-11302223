@@ -5,7 +5,7 @@ import { lightTheme, darkTheme } from "../Themes";
 export default function Header(){
     const {theme} = useTheme();
     const currentTheme = theme === 'light' ? lightTheme:darkTheme;
-    return (
+    return(
         <View style={[styles.container, {backgroundColor: currentTheme.background}]}>
             <Image style={styles.profile} source={require('../assets/profile.png')}/>
             <View>

@@ -3,7 +3,7 @@ import { useTheme } from "../ThemeContext";
 import { lightTheme, darkTheme } from "../Themes";
 
 export default function Options(){
-    const { theme } = useTheme();
+    const {theme} = useTheme();
     const currentTheme = theme === 'light' ? lightTheme:darkTheme;
     return(
         <View style={styles.container}>
