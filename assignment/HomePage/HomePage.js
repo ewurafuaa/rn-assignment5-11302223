@@ -4,7 +4,7 @@ import Header from './Header';
 import Card from './Card';
 import Options from './Options';
 import Transactions from './Transactions';
-import Footer from './Footer';
+import Footer from '../Components/Footer';
 import { useTheme } from '../Themes/ThemeContext';
 import { lightTheme, darkTheme } from '../Themes/Themes';
 
