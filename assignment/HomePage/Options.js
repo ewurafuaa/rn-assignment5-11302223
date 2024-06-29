@@ -1,26 +1,30 @@
 import { StyleSheet, View, Image, Text } from "react-native";
+import { useTheme } from "../ThemeContext";
+import { lightTheme, darkTheme } from "../Themes";
 
 export default function Options(){
+    const { theme } = useTheme();
+    const currentTheme = theme === 'light' ? lightTheme:darkTheme;
     return(
         <View style={styles.container}>
-            <View style={styles.circle1}>
+            <View style={[styles.circle1, {backgroundColor: currentTheme.circleBackground}]}>
                 <Image style={styles.sent} source={require('../assets/send.png')}></Image>
-                <Text style={styles.sentText}>Sent</Text>
+                <Text style={[styles.sentText, {color: currentTheme.text}]}>Sent</Text>
             </View>
 
-            <View style={styles.circle2}>
+            <View style={[styles.circle2, {backgroundColor: currentTheme.circleBackground}]}>
                 <Image style={styles.receive} source={require('../assets/recieve.png')}></Image>
-                <Text style={styles.receiveText}>Receive</Text>
+                <Text style={[styles.receiveText, {color: currentTheme.text}]}>Receive</Text>
             </View>
 
-            <View style={styles.circle3}>
+            <View style={[styles.circle3, {backgroundColor: currentTheme.circleBackground}]}>
                 <Image style={styles.loan} source={require('../assets/loan.png')}></Image>
-                <Text style={styles.loanText}>Loan</Text>
+                <Text style={[styles.loanText, {color: currentTheme.text}]}>Loan</Text>
             </View>
 
-            <View style={styles.circle4}>
+            <View style={[styles.circle4, {backgroundColor: currentTheme.circleBackground}]}>
                 <Image style={styles.topUp} source={require('../assets/topUp.png')}></Image>
-                <Text style={styles.topUpText}>Topup</Text>
+                <Text style={[styles.topUpText, {color: currentTheme.text}]}>Topup</Text>
             </View>
            
         </View>

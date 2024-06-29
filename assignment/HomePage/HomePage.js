@@ -3,18 +3,22 @@ import { ScrollView,StyleSheet, View} from 'react-native';
 import Header from './Header';
 import Card from './Card';
 import Options from './Options';
-import Transaction from './Transactions';
+import Transactions from './Transactions';
 import Footer from './Footer';
+import { useTheme } from '../ThemeContext';
+import { lightTheme, darkTheme } from '../Themes';
 
 
 export default function HomePage() {
+    const {theme} = useTheme();
+    const currentTheme = theme === 'light' ? lightTheme:darkTheme;
     return (
-        <View style={styles.container}>
-            <ScrollView contentContainerStyle={styles.scrollView}>
+        <View style={[styles.container, { backgroundColor: currentTheme.background }]}>
+            <ScrollView contentContainerStyle={[styles.scrollView, { backgroundColor: currentTheme.background }]}>
                 <Header />
                 <Card />
                 <Options />
-                <Transaction />
+                <Transactions />
             </ScrollView>
             <Footer />
         </View>
@@ -24,8 +28,10 @@ export default function HomePage() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: 'white'
     },
     scrollView: {
         flexGrow: 1,
+        backgroundColor: 'white',
     },
 });
