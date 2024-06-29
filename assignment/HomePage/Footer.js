@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { useTheme } from '../ThemeContext';
-import { lightTheme, darkTheme } from '../Themes';
+import { useTheme } from '../Themes/ThemeContext';
+import { lightTheme, darkTheme } from '../Themes/Themes';
 
 export default function Footer() {
     const navigation = useNavigation();

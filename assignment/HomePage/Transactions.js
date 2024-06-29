@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { useTheme } from '../ThemeContext';
-import { lightTheme, darkTheme } from '../Themes';
+import { useTheme } from '../Themes/ThemeContext';
+import { lightTheme, darkTheme } from '../Themes/Themes';
 
 const transactions = [
     {id: '1', title: 'Apple Store', category: 'Entertainment', amount: '-$5.99', icon: require('../assets/apple.png'), color: '#0D0D26'},

@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, Switch, StyleSheet, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { useTheme } from '../ThemeContext';
-import { lightTheme, darkTheme } from '../Themes';
+import { useTheme } from '../Themes/ThemeContext';
+import { lightTheme, darkTheme } from '../Themes/Themes';
 import Footer from '../HomePage/Footer';
 
 const Settings = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from './Themes/ThemeContext';
 import HomePage from './HomePage/HomePage';
 import Settings from './Settings/Settings';
 

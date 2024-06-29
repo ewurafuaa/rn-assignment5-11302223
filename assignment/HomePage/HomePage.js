@@ -5,8 +5,8 @@ import Card from './Card';
 import Options from './Options';
 import Transactions from './Transactions';
 import Footer from './Footer';
-import { useTheme } from '../ThemeContext';
-import { lightTheme, darkTheme } from '../Themes';
+import { useTheme } from '../Themes/ThemeContext';
+import { lightTheme, darkTheme } from '../Themes/Themes';
 
 
 export default function HomePage() {

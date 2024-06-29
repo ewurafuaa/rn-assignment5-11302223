@@ -1,6 +1,6 @@
 import { StyleSheet, View, Image, Text } from "react-native";
-import { useTheme } from "../ThemeContext";
-import { lightTheme, darkTheme } from "../Themes";
+import { useTheme } from "../Themes/ThemeContext";
+import { lightTheme, darkTheme } from "../Themes/Themes";
 
 export default function Header(){
     const {theme} = useTheme();
